@@ -98,7 +98,7 @@
 
 					<article id="contact" class="panel secondary">
 						<div class="image">
-							<img src="images/IMG_02.jpg" alt="" data-position="bottom center" />
+							<img src="../images/me2.jpg" alt="" data-position="bottom center" />
 						</div>
 						<div class="content">
 							<ul class="actions animated spinX">
