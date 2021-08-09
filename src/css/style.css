@@ -1,0 +1,98 @@
+@import url('./bootstrap.min.css');
+@import url("https://fonts.googleapis.com/css?family=Raleway|Montserrat:700");
+
+* {
+  font-family: "Fjalla One";
+  margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+p,span{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.weather-position{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(34, 34, 34, 0.9);
+}
+svg {
+  height: 90vh;
+  position: absolute;
+  top :5vh;
+  left:30vh;
+}
+
+path {
+  stroke: white;
+  fill: transparent;
+  transition: 0.5s;
+  cursor: pointer;
+}
+path:hover {
+  fill: #B99362;
+  transform: translate(-5px, -5px);
+}
+
+.title_area {
+  position: absolute;
+  right: 40vh;
+  top: 20vh;
+  color: white;
+  font-size: 25px;
+}
+
+hr {
+  width: 100px;
+  margin-left: 0;
+  border: none;
+  border-bottom: solid 2px #B99362;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.subtitle h2, .subtitle h4, .subtitle h5 {
+  margin: 0;
+}
+.subtitle h2 {
+  margin-top: 50px;
+}
+
+.v-item-group.v-bottom-navigation{
+  bottom: 5%;
+  width: 70%;
+  border-radius: 70px;
+  left: 50%;
+  transform: translateX(-50%) !important;
+}
+
+@media screen and (min-width: 1264px) and (max-width: 1904px){ 
+  .mb{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 1264px){ 
+  .title_area{
+    display: none;
+  }
+  svg{
+    top: 0;
+    left: 0;
+    max-height: 100%;  
+    max-width: 100%;  
+    width: auto;
+    height: auto;
+    
+  }
+}
